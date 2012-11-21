@@ -16,6 +16,14 @@ public class BLeftViewImpl extends Composite implements BLeftView {
 
     public BLeftViewImpl() {
         initWidget(uiBinder.createAndBindUi(this));
+        testDiv("view:b");
     }
+
+    private native void testDiv(String title) /*-{
+
+        $wnd.console.log(title);
+        $wnd.console.log($wnd.document.getElementById('b_left_view'));
+
+    }-*/;
 
 }

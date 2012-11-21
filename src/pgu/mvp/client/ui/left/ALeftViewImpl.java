@@ -16,6 +16,14 @@ public class ALeftViewImpl extends Composite implements ALeftView {
 
     public ALeftViewImpl() {
         initWidget(uiBinder.createAndBindUi(this));
+        testDiv("view:a");
     }
+
+    private native void testDiv(String title) /*-{
+
+        $wnd.console.log(title);
+        $wnd.console.log($wnd.document.getElementById('a_left_view'));
+
+    }-*/;
 
 }

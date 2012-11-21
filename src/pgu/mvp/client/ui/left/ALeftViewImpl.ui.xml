@@ -3,5 +3,6 @@
 
     <g:HTMLPanel>
         A LEFT
+        <div id="a_left_view"></div>
     </g:HTMLPanel>
 </ui:UiBinder> 
